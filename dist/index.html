@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Hangman</title>
   </head>
@@ -28,6 +36,34 @@
         <line class="figure-part" x1="140" y1="150" x2="120" y2="180"></line>
         <line class="figure-part" x1="140" y1="150" x2="160" y2="180"></line>
       </svg>
+
+      <div class="wrong-letters-container">
+        <div id="wrong-letters">
+          <p>Wrong</p>
+          <span>E,R,T,Y</span>
+        </div>
+      </div>
+
+      <div id="word" class="word">
+        <div class="letter">H</div>
+        <div class="letter">E</div>
+        <div class="letter">L</div>
+        <div class="letter">L</div>
+        <div class="letter">O</div>
+      </div>
+    </div>
+
+    <!-- Container for final message -->
+    <div id="popup-container" class="popup-container">
+      <div class="popup">
+        <h2 id="final-message">You Have Won</h2>
+        <button id="play-button">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification-container" class="notification-container">
+      <p>You have already guessed that letter!</p>
     </div>
     <script src="script.js"></script>
   </body>
